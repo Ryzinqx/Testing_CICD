@@ -1,7 +1,9 @@
-name: CI Pipeline
+﻿name: CI Pipeline
 on: [push]
 jobs:
   build:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello"
+      - uses: actions/checkout@v4
+      - name: Run Python Script
+        run: python Testing.py
