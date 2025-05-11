@@ -2,8 +2,7 @@
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v4
-      - name: Run Python Script
-        run: python Testing.py
+      - run: python Testing.py
