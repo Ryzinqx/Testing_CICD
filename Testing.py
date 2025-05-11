@@ -1,1 +1,3 @@
-print ("Hi dari master branch")
+HEAD
+print ("Hi dari kedua branch")
+feature-branch
